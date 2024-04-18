@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/c9e868ff59.js" crossorigin="anonymous"></script>
+    <title><%= title %> | Pdf paradise</title>
+</head>
+<body class="font-serif">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="close_sidebar">X</a>
+        <a class="block" href="">Year</a>
+        <a class="block" href="">Genre</a>
+        <a class="block" href="">Most download</a>
+        <a class="block" href="">Best Sellers</a>
+      </div>
+      <main id="main" class="main">
+        <nav class="flex justify-between p-4">
+            <button id="open_sidebar" class="md:hidden"><i class="fa-solid fa-bars"></i></button>
+            <a href="/">PDF Paradise</a>
+            <a href="/books/filter/year" class="hidden md:inline-block">Year</a>
+            <a href="/books/filter/genre" class="hidden md:inline-block">Genre</a>
+            <a href="/books/filter/most-download" class="hidden md:inline-block">Most downloaded</a>
+            <a href="/books/filter/best-sellers" class="hidden md:inline-block">Best Sellers</a>
+            <button id="searchBtn">Search</button>
+          </nav>

@@ -1,0 +1,21 @@
+
+<%- include('./partials/adminHeader') %>
+<main class="box-border my-8">
+    <form action="" method="post" class="p-4 text-center shadow-lg w-[350px] mx-auto">
+        <div>
+            <h3>Enter details to login</h3>
+        </div>
+        <div class="my-4 px-4">
+            <input type="text" name="username" id="username" class="p-2 bg-slate-200 w-full">
+        </div>
+        <div class="my-4 px-4">
+            <input type="password" name="password" id="password" class="p-2 bg-slate-200 w-full">
+        </div>
+        <div class="my-4 text-center px-4">
+            <button type="submit" class="bg-lilac-100 text-white px-2 py-1 rounded-sm">
+                Login
+            </button>
+        </div>
+    </form>
+</main>
+<%- include('./partials/adminFooter') %>

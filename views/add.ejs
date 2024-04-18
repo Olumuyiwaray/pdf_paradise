@@ -1,0 +1,61 @@
+<%- include('./partials/adminHeader') %>
+<main class="m-10 box-border">
+    <form action="" class="mx-4 my-8 px-4">
+        <div class="my-4">
+            <label for="name" class="my-0">Name</label>
+            <br />
+        <input type="text" name="name" id="name" class="p-2 bg-slate-100 w-full">
+        </div>
+        <div class="my-4">
+            <label for="author">Author</label>
+            <br />
+            <input type="text" name="author" id="author" class="p-2 bg-slate-100 w-full">
+        </div>
+        <div class="my-4">
+            <label for="genre">Genre</label>
+            <br />
+            <input type="text" name="name" id="genre" class="p-2 bg-slate-100 w-full">
+        </div>
+        <div class="my-4">
+            <label for="category">Category</label>
+            <br />
+            <select name="category" id="category" class="w-full bg-slate-100 p-2">
+                <option value="" selected disabled>
+                    Choose category:
+                </option>
+            </select>
+        </div>
+        <div class="my-4">
+            <label for="year">Year</label>
+            <br />
+            <input type="date" name="year" id="year" class="w-full bg-slate-100 p-2">
+        </div>
+        <div class="my-4">
+            <label for="language">Language</label>
+            <br />
+            <input type="text" name="language" id="language" class="p-2 bg-slate-100 w-full">
+        </div>
+        <div class="my-4">
+            <label for="best-seller">Best seller</label>
+            <br />
+            <select name="best-seller" id="best-seller" class="w-full bg-slate-100 p-2">
+                <option value="" selected disabled>
+                    Best seller?
+                </option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="my-4">
+            <label for="description">Description:</label>
+            <br />
+            <textarea name="description" id="description" cols="40" rows="5" class="resize-none bg-slate-100 w-full p-4 box-border"></textarea>
+        </div>
+        <div class="my-4">
+            <label for="image" class="bg-lilac-100 rounded-sm p-2 text-white cursor-pointer"> Add book Image</label>
+            <br />
+            <input type="file" name="image" id="image" class="hidden">
+        </div>
+    </form>
+</main>
+<%- include('./partials/adminFooter') %>

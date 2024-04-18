@@ -1,0 +1,52 @@
+<%- include('./partials/header') %>
+
+<div>
+    <section class="w-[80%] mx-auto text-center mt-14 p-4">
+        <h1 class="text-3xl font-semibold text-lilac-100">Welcome to PDF Paradise</h1>
+        <p class="my-2">Explore over 170M documents from a global community, share information, and find inspiration</p>
+        <form action="/books/search" method="get" class="relative">
+            <input type="text" name="search" id="searchbar" class="w-full px-6 py-2 bg-slate-200 rounded-full peer" placeholder="Books Authors.......">
+            <button type="submit" class="absolute top-[10px] right-3 px-2 peer-focus:border-l peer-focus:border-l-lilac-100">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="clear" class="absolute top-[10px] right-14">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </form>
+        
+        <p class="my-4">Or</p>
+
+        <p class="my-4">Browse popular genres</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-y-8 justify-items-center">
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Non-fiction</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Sports</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Fiction</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Sci-fi</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Religion</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+            <a href="#" class="border h-[80px] w-[250px] rounded-md text-left px-2 flex justify-around items-center">
+                <p>Romance</p>
+                <img src="book.jpg" class="h-full shadow-lg">
+            </a>
+        </div>
+        <a href="/books/categories" class="block my-8 bg-lilac-100 p-2 max-w-48 text-white mx-auto rounded-md">See More categories</a>
+    </section>
+        
+</div>
+
+<%- include('./partials/footer') %>
